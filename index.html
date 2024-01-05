@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Martuti</title>
 </head>
 
@@ -16,14 +13,14 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <h1>Logo</h1>
+                <h1>Martuti</h1>
             </div>
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link" rel="noopener noreferrer">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" el="noopener noreferrer">Quem sou eu?</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" rel="noopener noreferrer">Meus projetos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" rel="noopener noreferrer">Vamos juntos?</a></li>
+                    <li class="nav-item"><a href="#sobre-mim" class="nav-link" el="noopener noreferrer">Quem sou eu?</a></li>
+                    <li class="nav-item"><a href="#tec" class="nav-link" rel="noopener noreferrer">Meus projetos</a></li>
+                    <li class="nav-item"><a href="#juntos" class="nav-link" rel="noopener noreferrer">Vamos juntos?</a></li>
                 </ul>
             </div>
 
@@ -52,7 +49,7 @@
     </header>
 
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="titulos-home">
                 <div class="titulo-pt1">
                     <h1>Transformando ideias em</h1>
@@ -66,11 +63,15 @@
                 <h2 class="nome">Por Anna Carolina Martuti </h2>
             </div>
             <div class="img-prog">
-                <img class="img-programadora" src="assets/img/borboleta.png" alt="imagem de programadora">
+                <img class="img-programadora" src="assets/img/borboleta.png" alt="imagem de programadora"
+                    style='position:absolute;'>
+                <img class="img-fundo" src="assets/img/fundo.png" alt="imagem de programadora">
+
+
             </div>
         </section>
 
-        <section class="sobre-mim container-div">
+        <section class="sobre-mim container-div" id="sobre-mim">
             <div class="img-prog">
                 <img class="img-programadora" src="assets/img/1.png" alt="imagem de programadora">
             </div>
@@ -241,8 +242,11 @@
             </div>
         </section>
 
-        <section class="tecnologias">
+        <section class="tecnologias" id="tec">
             <div class="carousel-container">
+                <div class="titulo-habilidades">
+                    <h2>Minhas habilidades</h2>
+                </div>
                 <div class="carousel-track" id="carouselTrack">
                     <div class="carousel-group">
                         <div class="carousel-item"><img src="assets/img/tec/html.png" class="img-carousel"
@@ -306,14 +310,18 @@
             </div>
         </section>
 
+        <div class="titulo-habilidades">
+            <h2>Projetos</h2>
+        </div>
         <section class="projetos">
             <div class="proj-container">
                 <div class="header-pasta">
                     <div class="nome-proj">
-                        <h2>Ecommerce GLAM</h2>
+                        <h2>GLAM - Ecommerce</h2>
                     </div>
                     <div class="links-pasta">
-                        <img src="assets/img/github.svg" alt="logo github" class="link-pag">
+                        <a href="https://github.com/martuti/glam-ecommerce" target="blank"><img
+                                src="assets/img/github.svg" alt="logo github" class="link-pag"></a>
 
                     </div>
                 </div>
@@ -321,6 +329,36 @@
                     <p>Projeto de Ecommerce para uma loja de cosméticos. Além de todo o gerenciamento de produtos,
                         categorias, marcas, filtros e de dúvida dos usuários, a aplicação conta parcialmente com a
                         integração de pagamento com a API do MercadoPago, implementada no modo teste.
+                    </p>
+                    <div class="btn-pj">
+                        <a href="https://glamcosmeticos.000webhostapp.com/" target="blank" class="btn-of btn-proj">Ver a
+                            aplicação!</a>
+                    </div>
+                    <div class="tec-proj">
+                        <div class="tag">HTML</div>
+                        <div class="tag">CSS</div>
+                        <div class="tag">Bootstrap</div>
+                        <div class="tag">PHP</div>
+                        <div class="tag">MySQL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="proj-container">
+                <div class="header-pasta">
+                    <div class="nome-proj">
+                        <h2>Musicalitá - Estudos</h2>
+                    </div>
+                    <div class="links-pasta">
+                        <a href=""><img src="assets/img/github.svg" alt="logo github" class="link-pag"></a>
+
+                    </div>
+                </div>
+                <div class="body-pasta">
+                    <p>Aplicação de uma página de estudos gamificada para o aprendizado musical, focado no público
+                        infantil.
+                        Nele, ao concluído, será possível estudar módulos de conteúdos, que contenham materiais teóricos
+                        e resumos,
+                        questionários, sistema de pontuação, níveis e conquistas.
                     </p>
                     <div class="btn-pj">
                         <a type="button" class="btn-of  btn-proj">Ver a aplicação!</a>
@@ -337,43 +375,16 @@
             <div class="proj-container">
                 <div class="header-pasta">
                     <div class="nome-proj">
-                        <h2>Ecommerce GLAM</h2>
+                        <h2>Projeto 3 - descrição</h2>
                     </div>
                     <div class="links-pasta">
-                        <img src="assets/img/github.svg" alt="logo github" class="link-pag">
-
+                        <a href=""><img src="assets/img/github.svg" alt="logo github" class="link-pag"></a>
                     </div>
                 </div>
                 <div class="body-pasta">
-                    <p>Projeto de Ecommerce para uma loja de cosméticos. Além de todo o gerenciamento de produtos,
-                        categorias, marcas, filtros e de dúvida dos usuários, a aplicação conta parcialmente com a
-                        integração de pagamento com a API do MercadoPago, implementada no modo teste.
-                    </p>
-                    <div class="btn-pj">
-                        <a type="button" class="btn-of  btn-proj">Ver a aplicação!</a>
-                    </div>
-                    <div class="tec-proj">
-                        <div class="tag">HTML</div>
-                        <div class="tag">CSS</div>
-                        <div class="tag">Bootstrap</div>
-                        <div class="tag">PHP</div>
-                        <div class="tag">MySQL</div>
-                    </div>
-                </div>
-            </div>
-            <div class="proj-container">
-                <div class="header-pasta">
-                    <div class="nome-proj">
-                        <h2>Ecommerce GLAM</h2>
-                    </div>
-                    <div class="links-pasta">
-                        <img src="assets/img/github.svg" alt="logo github" class="link-pag">
-                    </div>
-                </div>
-                <div class="body-pasta">
-                    <p>Projeto de Ecommerce para uma loja de cosméticos. Além de todo o gerenciamento de produtos,
-                        categorias, marcas, filtros e de dúvida dos usuários, a aplicação conta parcialmente com a
-                        integração de pagamento com a API do MercadoPago, implementada no modo teste.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic iure animi, ullam accusantium
+                        deserunt quaerat fugit at ab saepe id? Ipsam quibusdam dolor deleniti? Aspernatur dolorum
+                        assumenda id excepturi? Aspernatur dolorum assumenda id excepturi?
                     </p>
                     <div class="btn-pj">
                         <a type="button" class="btn-of  btn-proj">Ver a aplicação!</a>
@@ -391,15 +402,35 @@
 
         </section>
 
-        <section class="vamos-trabalhar container-div">
+        <section class="vamos-trabalhar container-div" id="juntos">
             <div class="div-descricao">
                 <h2>Vamos trabalhar juntos?</h2>
                 <p>As oportunidades que obtive até aqui possibilitaram não só minha contribuição em prol de um problema
                     ou buscando intensificar algum benefício, mas também auxiliaram na evolução das minhas habilidades
-                    profissionais, por isso te convido: vamos solucionar mais um problema ou gerar mais benefícios
+                    profissionais e pessoais, por isso te convido: vamos solucionar mais um problema ou gerar mais benefícios
                     juntos?</p>
                 <div class="btn">
-                    <button type="button" class="btn-vj btn-of">Vamos juntos!</button>
+                    <a href="#" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor"
+                            class="bi bi-envelope-at-fill social-media" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                            <path
+                                d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                        </svg> </a>
+
+                    <a href="#" class="cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-linkedin social-media" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" fill="currentColor" class="bi bi-github social-media" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                          </svg>                    </a>
                 </div>
             </div>
             <div class="img-prog">
@@ -416,16 +447,26 @@
 
                 <div id="footer-social-media">
                     <a href="#" class="footer-link">
-                        <i class="social-media fa-brands fa-instagram"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-at-fill social-media" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                            <path
+                                d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                        </svg> </a>
+
+                    <a href="#" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin social-media" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
                     </a>
 
                     <a href="#" class="footer-link">
-                        <i class="social-media fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <a href="#" class="footer-link">
-                        <i class="social-media fa-brands fa-whatsapp"></i>
-                    </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github social-media" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                          </svg>                    </a>
                 </div>
             </div>
             <ul class="footer-list">
@@ -448,13 +489,13 @@
                     <h3>projetos</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">GLAM - ecommerce</a>
+                    <a href="#" class="footer-link">GLAM - Ecommerce</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Musicalitá</a>
+                    <a href="#" class="footer-link">Musicalitá - Educação</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Proj 3</a>
+                    <a href="#" class="footer-link">Projeto - Em desenvolvimento</a>
                 </li>
             </ul>
 
